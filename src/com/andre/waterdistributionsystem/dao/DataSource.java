@@ -2,13 +2,17 @@ package com.andre.waterdistributionsystem.dao;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import javax.swing.JOptionPane;
 
 /**
  * @author Andre Luis Sabino
- * @version 1.1
+ * @version 1.2
  * @since 12/04/2017
  */
+
 public class DataSource {
     private String hostname;
     private int port;
@@ -50,9 +54,8 @@ public class DataSource {
             connection.close();
             
         } catch (Exception ex) {
-            System.err.println("Erro ao desconectar do banco"+ex.getMessage());
+             JOptionPane.showMessageDialog(null,"Erro ao desconectar do banco "+ex.getMessage());
         }
     }
-    
     
 }

@@ -23,9 +23,11 @@ import javax.persistence.TemporalType;
 import javax.persistence.Transient;
 
 /**
- *
- * @author Andre
+ * @author Andre Luis Sabino
+ * @version 1.2
+ * @since 12/04/2017
  */
+
 @Entity
 @Table(name = "servicecall", catalog = "distribution", schema = "")
 @NamedQueries({
@@ -145,7 +147,7 @@ public class ServiceCall implements Serializable {
 
     public void setOpenDate(Date openDate) {
         Date oldOpenDate = this.openDate;
-        this.openDate = openDate;
+        this.openDate =  openDate;
         changeSupport.firePropertyChange("openDate", oldOpenDate, openDate);
     }
 

@@ -14,9 +14,11 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 
 /**
- *
- * @author Andre
+ * @author Andre Luis Sabino
+ * @version 1.2
+ * @since 12/04/2017
  */
+
 public class WaterDistributionMain extends JPanel {
     
     public WaterDistributionMain() {
@@ -336,13 +338,13 @@ public class WaterDistributionMain extends JPanel {
     }//GEN-LAST:event_refreshButtonActionPerformed
 
     private void NewServiceCallButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NewServiceCallButtonActionPerformed
-        NewServiceCall newCall = new NewServiceCall();
+        ServiceCallView newCall = new ServiceCallView();
         newCall.setTitle("Novo Atendimento - Cadastrar Chamado");
         newCall.setVisible(true);
     }//GEN-LAST:event_NewServiceCallButtonActionPerformed
 
     private void FowardServiceCallButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FowardServiceCallButtonActionPerformed
-        FowardServiceCall fowardCall = new FowardServiceCall();
+        FowardServiceCallView fowardCall = new FowardServiceCallView();
         fowardCall.setTitle("Encaminhamento de Chamado a Equipe");
         fowardCall.setVisible(true);
     }//GEN-LAST:event_FowardServiceCallButtonActionPerformed
@@ -407,6 +409,7 @@ public class WaterDistributionMain extends JPanel {
                 frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                 frame.pack();
                 frame.setVisible(true);
+                frame.setTitle("Controle Geral de Chamados");
             }
         });
     }
