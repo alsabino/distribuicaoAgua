@@ -7,7 +7,7 @@ package com.andre.waterdistributionsystem.model;
 
 /**
  * @author Andre Luis Sabino
- * @version 1.2
+ * @version 1.3
  * @since 12/04/2017
  */
 import javax.mail.*;
@@ -18,8 +18,8 @@ http://stackoverflow.com/questions/3649014/send-email-using-java by Gayathri Raj
 */
 public class MailSender {
 
-    final String senderEmailID = "sabinoandreluis@gmail.com";
-    final String senderPassword = "Moroni2015";
+    final String senderEmailID = "waterserviceteste@gmail.com";
+    final String senderPassword = "p@ss102030";
     final String emailSMTPserver = "smtp.gmail.com";
     final String emailServerPort = "465";
     private String receiverEmailID = null;
